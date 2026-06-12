@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Nomalog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="loader"><div class="spinner"></div></div>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.svg" alt="Nomalog Logo">
+                <div class="logo-text">
+                    <h1>Nomalog</h1>
+                    <p>Engineering the Future</p>
+                </div>
+            </a>
+            
+            <div class="nav-wrapper">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="search-bar">
+                    <input type="text" placeholder="Search services...">
+                    <button type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            
+            <button class="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Our Services</h2>
+                <p>Comprehensive ICT Solutions for Every Business Need</p>
+            </div>
+        </section>
+
+        <!-- Category Filters -->
+        <section class="container">
+            <div class="filters" style="text-align:center; margin-bottom:1.5rem;">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="network">Network</button>
+                <button class="filter-btn" data-filter="software">Software</button>
+                <button class="filter-btn" data-filter="consulting">Consulting</button>
+            </div>
+        </section>
+
+        <!-- Development & Applications -->
+        <section class="container" aria-label="Software services">
+            <h2 class="section-title"><i class="fas fa-code"></i> Development & Applications</h2>
+            <div class="service-grid" id="services-grid">
+                <div class="service-item" data-category="software">
+                    <figure class="image-figure">
+                        <img src="assets/images/applicationDevelopment.jpg" alt="Application development team at work">
+                        <figcaption class="image-caption">Application Development</figcaption>
+                    </figure>
+                    <h4>Application Development</h4>
+                    <p>Custom applications tailored to your business requirements.</p>
+                </div>
+                <div class="service-item" data-category="software">
+                    <figure class="image-figure">
+                        <img src="assets/images/softwareDevelopment.jpg" alt="Software development process">
+                        <figcaption class="image-caption">Software Development</figcaption>
+                    </figure>
+                    <h4>Software Development</h4>
+                    <p>Full-cycle development from concept to deployment.</p>
+                </div>
+                <div class="service-item" data-category="software">
+                    <figure class="image-figure">
+                        <img src="assets/images/webDevelopment.jpg" alt="Web development screenshot">
+                        <figcaption class="image-caption">Web Development</figcaption>
+                    </figure>
+                    <h4>Web Development</h4>
+                    <p>Modern, responsive websites and web applications.</p>
+                </div>
+                <div class="service-item" data-category="software">
+                    <figure class="image-figure">
+                        <img src="assets/images/mobileApplications.jpg" alt="Mobile applications on devices">
+                        <figcaption class="image-caption">Mobile Applications</figcaption>
+                    </figure>
+                    <h4>Mobile Applications</h4>
+                    <p>Native and cross-platform mobile apps (iOS/Android).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Infrastructure & Network -->
+        <section class="container" aria-label="Network services">
+            <h2 class="section-title"><i class="fas fa-network-wired"></i> Infrastructure & Network</h2>
+            <div class="service-grid">
+                <div class="service-item" data-category="network">
+                    <figure class="image-figure">
+                        <img src="assets/images/networkSolutions.jpg" alt="Network solutions architecture">
+                        <figcaption class="image-caption">Network Solutions</figcaption>
+                    </figure>
+                    <h4>Network Solutions</h4>
+                    <p>Design and implementation for optimal connectivity.</p>
+                </div>
+                <div class="service-item" data-category="network">
+                    <figure class="image-figure">
+                        <img src="assets/images/networkInfrastructure.jpg" alt="Network infrastructure setup">
+                        <figcaption class="image-caption">Network Infrastructure</figcaption>
+                    </figure>
+                    <h4>Network Infrastructure</h4>
+                    <p>Robust setup and management for enterprises.</p>
+                </div>
+                <div class="service-item" data-category="network">
+                    <figure class="image-figure">
+                        <img src="assets/images/telecommunications.jpg" alt="Telecommunications systems">
+                        <figcaption class="image-caption">Telecommunications</figcaption>
+                    </figure>
+                    <h4>Telecommunications</h4>
+                    <p>Integrated solutions for seamless business communication.</p>
+                </div>
+                <div class="service-item" data-category="network">
+                    <figure class="image-figure">
+                        <img src="assets/images/communicationsTechnology.jpg" alt="Communications technology setup">
+                        <figcaption class="image-caption">Communications Technology</figcaption>
+                    </figure>
+                    <h4>Communications Technology</h4>
+                    <p>Advanced implementation and support.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cloud & Data & Security (mixed category network/software) -->
+        <section class="container" aria-label="Cloud and security">
+            <h2 class="section-title"><i class="fas fa-cloud-upload-alt"></i> Cloud, Data & Security</h2>
+            <div class="service-grid">
+                <div class="service-item" data-category="network">
+                    <figure class="image-figure">
+                        <img src="assets/images/cloudComputing.jpg" alt="Cloud computing platform">
+                        <figcaption class="image-caption">Cloud Computing</figcaption>
+                    </figure>
+                    <h4>Cloud Computing</h4>
+                    <p>Scalable cloud infrastructure and services.</p>
+                </div>
+                <div class="service-item" data-category="software">
+                    <figure class="image-figure">
+                        <img src="assets/images/dataManagement.jpg" alt="Data management and analytics">
+                        <figcaption class="image-caption">Data Management</figcaption>
+                    </figure>
+                    <h4>Data Management</h4>
+                    <p>Efficient data handling and analytics.</p>
+                </div>
+                <div class="service-item" data-category="network">
+                    <figure class="image-figure">
+                        <img src="assets/images/systemIntegration.jpg" alt="System integration diagram">
+                        <figcaption class="image-caption">System Integration</figcaption>
+                    </figure>
+                    <h4>System Integration</h4>
+                    <p>Seamless integration of multiple systems.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Consulting & Support -->
+        <section class="container" aria-label="Consulting services">
+            <h2 class="section-title"><i class="fas fa-headset"></i> Consulting & Support</h2>
+            <div class="service-grid">
+                <div class="service-item" data-category="consulting">
+                    <figure class="image-figure">
+                        <img src="assets/images/consulting.jpg" alt="Business consulting meeting">
+                        <figcaption class="image-caption">Consulting</figcaption>
+                    </figure>
+                    <h4>Consulting</h4>
+                    <p>Expert guidance for technology strategy.</p>
+                </div>
+                <div class="service-item" data-category="consulting">
+                    <figure class="image-figure">
+                        <img src="assets/images/projectManagement.jpg" alt="Project management planning">
+                        <figcaption class="image-caption">Project Management</figcaption>
+                    </figure>
+                    <h4>Project Management</h4>
+                    <p>Professional delivery of complex projects.</p>
+                </div>
+                <div class="service-item" data-category="consulting">
+                    <figure class="image-figure">
+                        <img src="assets/images/technicalSupport.jpg" alt="Technical support team">
+                        <figcaption class="image-caption">Technical Support</figcaption>
+                    </figure>
+                    <h4>Technical Support</h4>
+                    <p>Dedicated support to keep systems running.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="container cta-section">
+            <h2 class="section-title">Ready to Get Started?</h2>
+            <p>Contact us to discuss which services fit your business needs.</p>
+            <a href="contact.html" class="cta-button">Schedule a Consultation <i class="fas fa-calendar-check"></i></a>
+        </div>
+
+        <!-- Services JSON (reference) and simple client-side filter script -->
+        <script>
+            // JSON reference of services (can be used later to render dynamically)
+            const servicesData = [
+                { id: 1, title: 'Application Development', category: 'software', image: 'assets/images/applicationDevelopment.jpg' },
+                { id: 2, title: 'Software Development', category: 'software', image: 'assets/images/softwareDevelopment.jpg' },
+                { id: 3, title: 'Web Development', category: 'software', image: 'assets/images/webDevelopment.jpg' },
+                { id: 4, title: 'Mobile Applications', category: 'software', image: 'assets/images/mobileApplications.jpg' },
+                { id: 5, title: 'Network Solutions', category: 'network', image: 'assets/images/networkSolutions.jpg' },
+                { id: 6, title: 'Network Infrastructure', category: 'network', image: 'assets/images/networkInfrastructure.jpg' },
+                { id: 7, title: 'Telecommunications', category: 'network', image: 'assets/images/telecommunications.jpg' },
+                { id: 8, title: 'Communications Technology', category: 'network', image: 'assets/images/communicationsTechnology.jpg' },
+                { id: 9, title: 'Cloud Computing', category: 'network', image: 'assets/images/cloudComputing.jpg' },
+                { id: 10, title: 'Data Management', category: 'software', image: 'assets/images/dataManagement.jpg' },
+                { id: 11, title: 'System Integration', category: 'network', image: 'assets/images/systemIntegration.jpg' },
+                { id: 12, title: 'Consulting', category: 'consulting', image: 'assets/images/consulting.jpg' },
+                { id: 13, title: 'Project Management', category: 'consulting', image: 'assets/images/projectManagement.jpg' },
+                { id: 14, title: 'Technical Support', category: 'consulting', image: 'assets/images/technicalSupport.jpg' }
+            ];
+
+            // Simple filter implementation
+            document.addEventListener('DOMContentLoaded', function () {
+                const buttons = document.querySelectorAll('.filter-btn');
+                const items = document.querySelectorAll('.service-item');
+
+                buttons.forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        buttons.forEach(b => b.classList.remove('active'));
+                        btn.classList.add('active');
+                        const filter = btn.getAttribute('data-filter');
+
+                        items.forEach(item => {
+                            if (filter === 'all') {
+                                item.style.display = '';
+                            } else {
+                                const cat = item.getAttribute('data-category');
+                                item.style.display = (cat === filter) ? '' : 'none';
+                            }
+                        });
+                    });
+                });
+            });
+        </script>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Nomalog</h4>
+                    <p>Engineering the Future – Comprehensive ICT Solutions and Consulting Services</p>
+                </div>
+                <div class="footer-section">
+                    <h4><i class="fas fa-map-marker-alt"></i> Headquarters</h4>
+                    <p>Elethu House, 94 Bekker Road<br>Vorna Valley, Midrand</p>
+                </div>
+                <div class="footer-section">
+                    <h4><i class="fas fa-phone-alt"></i> Contact Info</h4>
+                    <p>Phone: <a href="tel:+27609288219">+27 60 928 8219</a></p>
+                    <p>Email: <a href="mailto:support@nomalog.co.za">support@nomalog.co.za</a></p>
+                    <p>Mailing: 1 Alfred Road, Vincent, East London, 5217</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="services.html">Services</a></p>
+                    <p><a href="team.html">Team</a></p>
+                    <p><a href="contact.html">Contact</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nomalog. All rights reserved. Engineering the Future.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
